@@ -13,7 +13,7 @@ import './index.css';
 
 function App() {
   return (
-    <Router basename="/immigrationmentors_website">
+    <Router basename="/">
       <div className="App">
         <Routes>
           <Route path="/" element={<Home />} />
