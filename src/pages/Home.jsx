@@ -34,7 +34,7 @@ const Home = () => {
             Immigration Mentors
           </h1>
           
-          <p className="text-md sm:text-lg md:text-xl lg:text-2xl mb-4 sm:mb-6 text-gray-200 font-light max-w-4xl mx-auto">
+          <p className="text-base sm:text-md md:text-xl lg:text-2xl mb-4 sm:mb-6 text-gray-200 font-light max-w-4xl mx-auto">
             Your <span className="font-semibold text-white">trusted partner</span> for visa & immigration services
           </p>
           
@@ -54,7 +54,6 @@ const Home = () => {
           
           {/* Additional Trust Element */}
           <div className="mt-0 text-center">
-            <p className="text-gray-300 text-xs sm:text-sm mb-3 sm:mb-5">Serving clients worldwide since 2020</p>
             <div className="flex flex-wrap justify-center items-center space-x-2 sm:space-x-5 md:space-x-10 opacity-80">
               <span className="text-xs sm:text-sm">• Student Visas</span>
               <span className="text-xs sm:text-sm">• Work Permits</span>

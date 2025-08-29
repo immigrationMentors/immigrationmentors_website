@@ -116,7 +116,7 @@ const Country = () => {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       
-      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6">
+      <section className="py-6 sm:py-8 md:py-10 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-8 sm:mb-12 md:mb-16">
             <Link 
@@ -125,10 +125,10 @@ const Country = () => {
             >
               ← Back to Countries
             </Link>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6">
               {countryName} Visa Services
             </h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-base sm:text-md md:text-lg text-gray-600 max-w-3xl mx-auto font-semibold">
               Professional visa and immigration services for {countryName}
             </p>
           </div>
@@ -137,13 +137,13 @@ const Country = () => {
             {services.map((service, index) => (
               <div key={index} className="card group p-4 sm:p-6">
                 <div className="text-2xl sm:text-3xl md:text-4xl mb-3 sm:mb-4 flex justify-center">{getIcon(service.icon)}</div>
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2 sm:mb-3">
+                <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">
                   {service.name}
                 </h3>
-                <p className="text-sm sm:text-base text-gray-600 mb-3 sm:mb-4">{service.description}</p>
+                <p className="text-sm sm:text-base md:text-md text-gray-600 mb-3 sm:mb-4">{service.description}</p>
                 <Link 
                   to="/contact" 
-                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold group-hover:text-blue-800 transition-colors text-sm sm:text-base"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800 font-semibold group-hover:text-blue-800 transition-colors text-xs sm:text-sm"
                 >
                   Learn More →
                 </Link>
@@ -152,13 +152,13 @@ const Country = () => {
           </div>
           
           <div className="text-center mt-8 sm:mt-12 md:mt-16">
-            <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold text-gray-900 mb-3 sm:mb-4 md:mb-6">
+            <h2 className="text-2xl sm:text-2xl md:text-3xl font-semibold text-gray-900 mb-3 sm:mb-4 md:mb-6">
               Ready to Apply?
             </h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 mb-4 sm:mb-6 md:mb-8">
-              Get expert guidance for your {countryName.split(' ')[0]} visa application
+            <p className="text-base sm:text-lg md:text-md text-gray-600 mb-4 sm:mb-6 md:mb-8 font-semibold">
+              Get expert guidance for your {countryName} visa application
             </p>
-            <Link to="/contact" className="btn-primary text-sm sm:text-base md:text-lg">
+            <Link to="/contact" className="btn-primary text-sm sm:text-base">
               Get Free Consultation
             </Link>
           </div>

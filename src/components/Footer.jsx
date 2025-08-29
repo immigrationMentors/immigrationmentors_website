@@ -1,18 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { HiLocationMarker, HiMail, HiPhone } from 'react-icons/hi';
 import { FaFacebookF, FaInstagram, FaWhatsapp, FaTwitter, FaLinkedinIn } from 'react-icons/fa';
 
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-6 sm:py-10 md:py-16">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 md:gap-12">
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 md:gap-12">
           
           {/* Company Info & Contact - Highest Priority */}
           <div className="lg:col-span-1">
             <div className="mb-3 sm:mb-6">
-              <h3 className="text-xl md:text-2xl font-bold text-white mb-2 sm:mb-3">Immigration Mentors</h3>
-              <p className="text-gray-300 text-sm md:text-md leading-relaxed">
+              <h3 className="text-lg sm:text-xl md:text-2xl font-bold text-white mb-2 sm:mb-3">Immigration Mentors</h3>
+              <p className="text-gray-300 text-sm sm:text-base md:text-md leading-relaxed">
                 Your trusted partner for visa and immigration services.
               </p>
             </div>
@@ -21,28 +22,26 @@ const Footer = () => {
               <div className="flex items-start">
                 <HiPhone className="text-green-400 text-xl mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-white font-semibold">Phone</p>
-                  <a href="tel:+919392666609" className="text-gray-300 hover:text-green-400 transition-colors text-sm md:text-base">
+                  <p className="text-white font-semibold text-sm sm:text-base md:text-md">Phone</p>
+                  <a href="tel:+919392666609" className="text-gray-300 hover:text-green-400 transition-colors text-sm sm:text-base md:text-md">
                     +91-9392666609
                   </a>
                 </div>
               </div>
-              
               <div className="flex items-start">
                 <HiMail className="text-blue-400 text-xl mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-white font-semibold">Email</p>
-                  <a href="mailto:info.immigrationmentors@gmail.com" className="text-gray-300 hover:text-blue-400 transition-colors text-sm md:text-base break-all">
+                  <p className="text-white font-semibold text-sm sm:text-base md:text-md">Email</p>
+                  <a href="mailto:info.immigrationmentors@gmail.com" className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base md:text-md break-all">
                     info.immigrationmentors@gmail.com
                   </a>
                 </div>
               </div>
-              
               <div className="flex items-start">
                 <HiLocationMarker className="text-red-400 text-xl mr-3 mt-1 flex-shrink-0" />
                 <div>
-                  <p className="text-white font-semibold">Office Address</p>
-                  <address className="text-gray-300 not-italic leading-relaxed text-sm md:text-base">
+                  <p className="text-white font-semibold text-sm sm:text-base md:text-md">Office Address</p>
+                  <address className="text-gray-300 not-italic leading-relaxed text-sm sm:text-base md:text-md">
                     19-5-16/B/15, Bahadurpura<br />
                     Hyderabad, 500064<br />
                     Telangana, India
@@ -54,28 +53,27 @@ const Footer = () => {
           
           {/* Services & Links */}
           <div className="mt-4 sm:mt-0">
-            <h4 className="text-lg md:text-xl font-semibold text-white mb-3 md:mb-6">Popular Destinations</h4>
+            <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-3 md:mb-6">Popular Destinations</h4>
             <ul className="space-y-1 md:space-y-3">
-              <li><a href="/countries/canada" className="text-gray-300 hover:text-white transition-colors text-sm md:text-base">Canada</a></li>
-              <li><a href="/countries/usa" className="text-gray-300 hover:text-white transition-colors text-sm md:text-base">United States</a></li>
-              <li><a href="/countries/uk" className="text-gray-300 hover:text-white transition-colors text-sm md:text-base">United Kingdom</a></li>
-              <li><a href="/countries/australia" className="text-gray-300 hover:text-white transition-colors text-sm md:text-base">Australia</a></li>
+              <li><Link to="/countries/canada" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Canada</Link></li>
+              <li><Link to="/countries/usa" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">United States</Link></li>
+              <li><Link to="/countries/uk" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">United Kingdom</Link></li>
+              <li><Link to="/countries/australia" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Australia</Link></li>
             </ul>
-            
             <div className="mt-4 md:mt-8">
-              <h4 className="text-lg md:text-xl font-semibold text-white mb-3 md:mb-6">Quick Links</h4>
+              <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-3 md:mb-6">Quick Links</h4>
               <ul className="space-y-1 md:space-y-3">
-                <li><a href="/" className="text-gray-300 hover:text-white transition-colors text-sm md:text-base">Home</a></li>
-                <li><a href="/countries" className="text-gray-300 hover:text-white transition-colors text-sm md:text-base">Countries</a></li>
-                <li><a href="/contact" className="text-gray-300 hover:text-white transition-colors text-sm md:text-base">Contact Us</a></li>
+                <li><Link to="/" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Home</Link></li>
+                <li><Link to="/countries" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Countries</Link></li>
+                <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Contact Us</Link></li>
               </ul>
             </div>
           </div>
           
           {/* Social Media & CTA */}
           <div className="mt-4 lg:mt-0">
-            <h4 className="text-lg md:text-xl font-semibold text-white mb-3 md:mb-6">Connect With Us</h4>
-            <p className="text-gray-300 mb-3 md:mb-6 leading-relaxed text-sm md:text-base">
+            <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-3 md:mb-6">Connect With Us</h4>
+            <p className="text-gray-300 mb-3 md:mb-6 leading-relaxed text-sm sm:text-base md:text-md">
               Stay updated with the latest immigration news, tips, and success stories.
             </p>
             
@@ -128,13 +126,13 @@ const Footer = () => {
             </div>
             
             <div className="bg-gray-800 p-4 sm:p-6 rounded-lg">
-              <h5 className="text-white font-semibold mb-2 text-sm md:text-base">Ready to Start Your Journey?</h5>
-              <a 
-                href="/contact" 
-                className="inline-block bg-white text-gray-900 px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm md:text-base"
+              <h5 className="text-white font-semibold mb-2 text-base sm:text-lg md:text-xl">Ready to Start Your Journey?</h5>
+              <Link 
+                to="/contact" 
+                className="inline-block bg-white text-gray-900 px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm sm:text-base md:text-md"
               >
                 Get Free Consultation
-              </a>
+              </Link>
             </div>
           </div>
           
@@ -146,12 +144,12 @@ const Footer = () => {
               © {new Date().getFullYear()} Immigration Mentors. All rights reserved.
             </p>
             <div className="flex space-x-4 sm:space-x-6 text-xs sm:text-sm">
-              <a href="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
+              <Link to="/privacy-policy" className="text-gray-400 hover:text-white transition-colors">
                 Privacy Policy
-              </a>
-              <a href="/terms-and-conditions" className="text-gray-400 hover:text-white transition-colors">
+              </Link>
+              <Link to="/terms-and-conditions" className="text-gray-400 hover:text-white transition-colors">
                 Terms & Conditions
-              </a>
+              </Link>
             </div>
           </div>
         </div>

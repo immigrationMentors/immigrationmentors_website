@@ -66,20 +66,24 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
-      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6">
+      
+      {/* Page Header */}
+      <section className="py-6 sm:py-8 md:py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">Contact Us</h1>
+          <p className="text-base sm:text-md md:text-lg text-gray-600 max-w-3xl mx-auto font-semibold">
+            Ready to start your immigration journey? Get in touch with our expert consultants
+          </p>
+        </div>
+      </section>
+
+      <section className="py-4 sm:py-6 md:py-8 px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Contact Us</h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Ready to start your immigration journey? Get in touch with our expert consultants
-            </p>
-          </div>
-          
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 md:gap-12">
             {/* Contact Form */}
             <div className="card p-4 sm:p-6 md:p-8">
               <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-4 sm:mb-6">Send Us a Message</h2>
-              
+
               {state.succeeded ? (
                 <div className="text-center py-8 sm:py-12">
                   <div className="text-4xl sm:text-6xl mb-4 text-green-500 flex justify-center">
@@ -112,13 +116,13 @@ const Contact = () => {
                         className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-gray-500 focus:border-transparent text-sm sm:text-base"
                         placeholder="Enter your full name"
                       />
-                      <ValidationError 
-                        prefix="Name" 
+                      <ValidationError
+                        prefix="Name"
                         field="name"
                         errors={state.errors}
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="block text-sm font-semibold text-gray-700 mb-1 sm:mb-2">
                         Email Address *
@@ -133,14 +137,14 @@ const Contact = () => {
                         className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                         placeholder="Enter your email"
                       />
-                      <ValidationError 
-                        prefix="Email" 
+                      <ValidationError
+                        prefix="Email"
                         field="email"
                         errors={state.errors}
                       />
                     </div>
                   </div>
-                  
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
                     <div>
                       <label htmlFor="phone" className="block text-sm font-semibold text-gray-700 mb-1 sm:mb-2">
@@ -156,7 +160,7 @@ const Contact = () => {
                         placeholder="Enter your phone number"
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="country" className="block text-sm font-semibold text-gray-700 mb-1 sm:mb-2">
                         Country of Interest
@@ -170,9 +174,9 @@ const Contact = () => {
                           <div className="flex items-center">
                             {getSelectedCountry() ? (
                               <>
-                                <img 
-                                  src={getSelectedCountry().flag} 
-                                  alt={`${getSelectedCountry().name} flag`} 
+                                <img
+                                  src={getSelectedCountry().flag}
+                                  alt={`${getSelectedCountry().name} flag`}
                                   className="w-5 sm:w-6 h-3 sm:h-4 object-cover rounded mr-2 sm:mr-3"
                                 />
                                 <span>{getSelectedCountry().name}</span>
@@ -185,7 +189,7 @@ const Contact = () => {
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                           </svg>
                         </button>
-                        
+
                         {isCountryDropdownOpen && (
                           <div className="absolute z-10 w-full mt-1 bg-white border border-gray-300 rounded-lg shadow-lg max-h-48 sm:max-h-60 overflow-y-auto">
                             {countries.map((country) => (
@@ -195,9 +199,9 @@ const Contact = () => {
                                 onClick={() => handleCountrySelect(country.value)}
                                 className="w-full px-3 sm:px-4 py-2 sm:py-3 text-left hover:bg-gray-50 flex items-center transition-colors text-sm sm:text-base"
                               >
-                                <img 
-                                  src={country.flag} 
-                                  alt={`${country.name} flag`} 
+                                <img
+                                  src={country.flag}
+                                  alt={`${country.name} flag`}
                                   className="w-5 sm:w-6 h-3 sm:h-4 object-cover rounded mr-2 sm:mr-3"
                                 />
                                 <span>{country.name}</span>
@@ -205,7 +209,7 @@ const Contact = () => {
                             ))}
                           </div>
                         )}
-                        
+
                         {/* Hidden input to maintain form functionality */}
                         <input
                           type="hidden"
@@ -215,7 +219,7 @@ const Contact = () => {
                       </div>
                     </div>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="visaType" className="block text-sm font-semibold text-gray-700 mb-1 sm:mb-2">
                       Visa Type
@@ -235,7 +239,7 @@ const Contact = () => {
                       <option value="other">Other</option>
                     </select>
                   </div>
-                  
+
                   <div>
                     <label htmlFor="message" className="block text-sm font-semibold text-gray-700 mb-1 sm:mb-2">
                       Message *
@@ -250,13 +254,13 @@ const Contact = () => {
                       className="w-full px-3 sm:px-4 py-2 sm:py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm sm:text-base"
                       placeholder="Tell us about your requirements, timeline, and any specific questions you have..."
                     ></textarea>
-                    <ValidationError 
-                      prefix="Message" 
+                    <ValidationError
+                      prefix="Message"
                       field="message"
                       errors={state.errors}
                     />
                   </div>
-                  
+
                   <button
                     type="submit"
                     disabled={state.submitting}
@@ -267,7 +271,7 @@ const Contact = () => {
                 </form>
               )}
             </div>
-            
+
             {/* Contact Information */}
             <div className="space-y-6 sm:space-y-8">
               <div className="card p-4 sm:p-6 md:p-8">
@@ -282,7 +286,7 @@ const Contact = () => {
                       <p className="text-gray-600 text-sm sm:text-base">+91-9392666609</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="text-xl sm:text-2xl mr-3 sm:mr-4 text-blue-600">
                       <HiMail />
@@ -292,7 +296,7 @@ const Contact = () => {
                       <p className="text-gray-600 text-sm sm:text-base break-all">info.immigrationmentors@gmail.com</p>
                     </div>
                   </div>
-                  
+
                   <div className="flex items-start">
                     <div className="text-xl sm:text-2xl mr-3 sm:mr-4 text-red-600">
                       <HiLocationMarker />
@@ -304,7 +308,7 @@ const Contact = () => {
                   </div>
                 </div>
               </div>
-              
+
               <div className="card p-4 sm:p-6 md:p-8">
                 <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Why Choose Us?</h3>
                 <ul className="space-y-2 sm:space-y-3">

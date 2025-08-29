@@ -73,16 +73,19 @@ const Countries = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       <Navbar />
-      
-      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Countries We Serve</h1>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+
+      {/* Page Header */}
+      <section className="py-6 sm:py-8 md:py-10">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">Countries We Serve</h1>
+            <p className="text-base sm:text-md md:text-lg text-gray-600 max-w-3xl mx-auto font-semibold">
               Comprehensive visa and immigration services for multiple destinations worldwide
             </p>
           </div>
-          
+      </section>
+
+      <section className="py-4 sm:py-6 md:py-8 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {countries.map((country) => (
               <Link
@@ -92,17 +95,17 @@ const Countries = () => {
               >
                 <div className="card group-hover:scale-105 transition-transform duration-300 h-full flex flex-col overflow-hidden p-4 sm:p-6">
                   <div className="bg-gray-100 p-4 sm:p-6 md:p-8 rounded-lg mb-3 sm:mb-4 flex justify-center items-center">
-                    <img 
-                      src={country.flag} 
-                      alt={`${country.name} Flag`} 
+                    <img
+                      src={country.flag}
+                      alt={`${country.name} Flag`}
                       className="w-16 sm:w-20 h-10 sm:h-12 object-cover rounded-lg shadow-md"
                     />
                   </div>
-                  <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 sm:mb-3">{country.name}</h3>
-                  <p className="text-sm sm:text-base text-gray-600 mb-4 flex-grow">{country.description}</p>
+                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">{country.name}</h3>
+                  <p className="text-sm sm:text-base md:text-md text-gray-600 mb-4 flex-grow">{country.description}</p>
                   <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white font-semibold py-2 sm:py-3 px-3 sm:px-4 -mx-4 sm:-mx-6 -mb-4 sm:-mb-6 mt-auto flex items-center justify-between">
-                    <span className="text-sm sm:text-base">View Services</span>
-                    <span className="group-hover:translate-x-1 transition-transform">→</span>
+                    <span className="text-xs sm:text-sm">View Services</span>
+                    <span className="group-hover:translate-x-1 transition-transform text-xs sm:text-sm">→</span>
                   </div>
                 </div>
               </Link>
