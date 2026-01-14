@@ -6,6 +6,7 @@ import Countries from './pages/Countries';
 import Country from './pages/Country';
 import FAQ from './pages/FAQ';
 import Contact from './pages/Contact';
+import ReferralProgram from './pages/ReferralProgram';
 import PrivacyPolicy from './pages/PrivacyPolicy';
 import TermsAndConditions from './pages/TermsAndConditions';
 import ScrollToTop from './components/ScrollToTop';
@@ -23,6 +24,7 @@ function App() {
           <Route path="/countries" element={<Countries />} />
           <Route path="/country/:slug" element={<Country />} />
           <Route path="/faq" element={<FAQ />} />
+          <Route path="/referral-program" element={<ReferralProgram />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/privacy-policy" element={<PrivacyPolicy />} />
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />

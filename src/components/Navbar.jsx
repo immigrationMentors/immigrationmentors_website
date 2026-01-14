@@ -68,6 +68,13 @@ const Navbar = () => {
               FAQ
             </Link>
             <Link 
+              to="/referral-program" 
+              className={`text-gray-700 hover:text-gray-900 transition-colors pb-1 ${location.pathname === '/referral-program' ? 'border-b-2 border-gray-800 font-medium' : ''}`} 
+              onClick={scrollToTop}
+            >
+              Referral Program
+            </Link>
+            <Link 
               to="/contact" 
               className={`text-gray-700 hover:text-gray-900 transition-colors pb-1 ${location.pathname === '/contact' ? 'border-b-2 border-gray-800 font-medium' : ''}`} 
               onClick={scrollToTop}
@@ -131,6 +138,13 @@ const Navbar = () => {
               onClick={handleNavClick}
             >
               FAQ
+            </Link>
+            <Link 
+              to="/referral-program" 
+              className={`text-gray-700 hover:text-gray-900 transition-colors px-2 py-2 rounded-md hover:bg-gray-100 ${location.pathname === '/referral-program' ? 'border-l-4 border-gray-800 font-medium pl-3' : ''}`}
+              onClick={handleNavClick}
+            >
+              Referral Program
             </Link>
             <Link 
               to="/contact" 

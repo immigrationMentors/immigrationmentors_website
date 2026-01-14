@@ -6,9 +6,9 @@ import { FaFacebookF, FaInstagram, FaWhatsapp, FaTwitter, FaLinkedinIn } from 'r
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-6 sm:py-10 md:py-16">
-  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 md:gap-12">
-          
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8 md:gap-12">
+
           {/* Company Info & Contact - Highest Priority */}
           <div className="lg:col-span-1">
             <div className="mb-3 sm:mb-6">
@@ -17,7 +17,7 @@ const Footer = () => {
                 Your trusted partner for visa and immigration services.
               </p>
             </div>
-            
+
             <div className="space-y-2 sm:space-y-4">
               <div className="flex items-start">
                 <HiPhone className="text-green-400 text-xl mr-3 mt-1 flex-shrink-0" />
@@ -50,34 +50,35 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Services & Links */}
           <div className="mt-4 sm:mt-0">
-            <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-3 md:mb-6">Popular Destinations</h4>
-            <ul className="space-y-1 md:space-y-3">
+            <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">Popular Destinations</h4>
+            <ul className="space-y-1 md:space-y-2">
               <li><Link to="/countries/canada" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Canada</Link></li>
               <li><Link to="/countries/usa" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">United States</Link></li>
               <li><Link to="/countries/uk" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">United Kingdom</Link></li>
               <li><Link to="/countries/australia" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Australia</Link></li>
             </ul>
-            <div className="mt-4 md:mt-8">
-              <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-3 md:mb-6">Quick Links</h4>
-              <ul className="space-y-1 md:space-y-3">
+            <div className="mt-4 md:mt-6">
+              <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">Quick Links</h4>
+              <ul className="space-y-1 md:space-y-2">
                 <li><Link to="/" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Home</Link></li>
                 <li><Link to="/countries" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Countries</Link></li>
+                <li><Link to="/referral-program" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Referral Program</Link></li>
                 <li><Link to="/contact" className="text-gray-300 hover:text-white transition-colors text-sm sm:text-base md:text-md">Contact Us</Link></li>
               </ul>
             </div>
           </div>
-          
+
           {/* Social Media & CTA */}
           <div className="mt-4 lg:mt-0">
-            <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-3 md:mb-6">Connect With Us</h4>
+            <h4 className="text-base sm:text-lg md:text-xl font-semibold text-white mb-2 md:mb-3">Connect With Us</h4>
             <p className="text-gray-300 mb-3 md:mb-6 leading-relaxed text-sm sm:text-base md:text-md">
               Stay updated with the latest immigration news, tips, and success stories.
             </p>
-            
-            <div className="flex flex-wrap gap-2 sm:gap-3 mb-4 sm:mb-6">
+
+            <div className="flex flex-wrap gap-2 sm:gap-3 mb-6 sm:mb-8">
               <a
                 href="https://www.facebook.com/share/19542DKPYj/?mibextid=wwXIfr"
                 target="_blank"
@@ -124,20 +125,17 @@ const Footer = () => {
                 <FaLinkedinIn className="text-base sm:text-lg" />
               </a>
             </div>
-            
-            <div className="bg-gray-800 p-4 sm:p-6 rounded-lg">
-              <h5 className="text-white font-semibold mb-2 text-base sm:text-lg md:text-xl">Ready to Start Your Journey?</h5>
-              <Link 
-                to="/contact" 
-                className="inline-block bg-white text-gray-900 px-4 sm:px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors text-sm sm:text-base md:text-md"
-              >
-                Get Free Consultation
-              </Link>
+
+            <div className="bg-gray-700 p-2 sm:p-4 rounded-lg">
+              <h5 className="text-white font-semibold mb-4 text-base sm:text-lg md:text-xl">Disclaimer</h5>
+             
+              <p className="text-xs text-gray-300 leading-relaxed">
+                Immigration Mentors does not guarantee visa approval or any specific outcome. We strictly adhere to legal and ethical practices and do not support, provide, or endorse fake, false or fraudulent documents. All services are provided in compliance with applicable immigration laws and regulations.
+              </p>
             </div>
           </div>
-          
         </div>
-        
+
         <div className="border-t border-gray-700 mt-6 sm:mt-10 md:mt-12 pt-4 sm:pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-xs sm:text-sm mb-3 md:mb-0">

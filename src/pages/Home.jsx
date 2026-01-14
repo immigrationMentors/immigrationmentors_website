@@ -11,7 +11,7 @@ const Home = () => {
       <Navbar />
       
       {/* Hero Section */}
-       <section className="bg-gradient-to-br from-gray-800 to-black text-white py-20 sm:py-24 md:py-28 lg:py-32 px-6 sm:px-8 md:px-10 lg:px-12 relative overflow-hidden">
+       <section className="bg-gradient-to-br from-gray-900 via-gray-800 to-black text-white py-32 sm:py-36 md:py-38 lg:py-40 px-6 sm:px-8 md:px-10 lg:px-12 relative overflow-hidden">
         {/* Background Image */}
         <div
           className="absolute inset-0 opacity-20 bg-cover bg-center blur-xs"
@@ -20,53 +20,53 @@ const Home = () => {
         
         <div className="max-w-6xl mx-auto text-center relative z-10">
           {/* Trust Badge */}
-          <div className="inline-flex items-center bg-white/10 backdrop-blur-sm border border-white/20 rounded-full px-1 sm:px-2 md:px-4 py-1.5 sm:py-2.5 mb-6 sm:mb-10 text-[10px] sm:text-xs md:text-sm max-w-[90%] sm:max-w-[85%] whitespace-nowrap overflow-hidden">
+          <div className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-1 sm:px-2 md:px-4 lg:px-6 py-1.5 sm:py-2.5 mb-8 sm:mb-12 text-xs sm:text-sm md:text-base max-w-[95%] sm:max-w-[85%] whitespace-nowrap overflow-hidden">
             <span className="text-yellow-400 mr-1 sm:mr-1.5 md:mr-2.5 flex-shrink-0">
               <HiStar className="w-3 h-3 sm:w-4 sm:h-4" />
             </span>
-            <span className="font-medium truncate">Serving Hyderabadis & Beyond | Registered Professionals</span>
+            <span className="truncate">Serving Hyderabadis & Beyond | Registered Professionals</span>
             <span className="text-yellow-400 ml-1 sm:ml-1.5 md:ml-2.5 flex-shrink-0">
               <HiStar className="w-3 h-3 sm:w-4 sm:h-4" />
             </span>
           </div>
           
-          <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-5 sm:mb-8 animate-fade-in text-white pb-2">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 sm:mb-10 animate-fade-in text-white pb-2">
             Immigration Mentors
           </h1>
           
-          <p className="text-base sm:text-md md:text-xl lg:text-2xl mb-4 sm:mb-6 text-gray-200 font-light max-w-4xl mx-auto">
+          <p className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-6 sm:mb-8 text-gray-200 font-light max-w-4xl mx-auto">
             Your <span className="font-semibold text-white">trusted partner</span> for visa & immigration services
           </p>
           
-          <p className="text-sm sm:text-base lg:text-lg mb-6 sm:mb-10 text-gray-300 flex items-center justify-center">
+          <p className="text-base sm:text-lg lg:text-xl mb-8 sm:mb-12 text-gray-300 flex items-center justify-center">
             Professional Consultancy based in Hyderabad, India
           </p>
           
           
           <div className="flex flex-row justify-center items-center gap-3 sm:gap-5 md:gap-6 mb-8 sm:mb-12">
-            <Link to="/countries" className="w-auto bg-white text-gray-900 hover:bg-gray-100 text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-10 py-2.5 sm:py-3 md:py-3.5 rounded-md font-medium inline-flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-200">
+            <Link to="/countries" className="w-auto bg-white text-gray-900 hover:bg-gray-100 text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-10 py-2.5 sm:py-3 md:py-3.5 rounded-md font-medium inline-flex items-center justify-center shadow-md hover:shadow-lg transition-all duration-200">
               Explore Countries
             </Link>
-            <Link to="/contact" className="w-auto border-2 border-gray-400 text-white hover:bg-white hover:text-gray-900 text-xs sm:text-sm md:text-base px-4 sm:px-6 md:px-10 py-2.5 sm:py-3 md:py-3.5 rounded-md font-medium inline-flex items-center justify-center transition-all duration-200">
+            <Link to="/contact" className="w-auto border-2 border-gray-400 text-white hover:bg-white hover:text-gray-900 text-sm sm:text-base md:text-lg px-4 sm:px-6 md:px-10 py-2.5 sm:py-3 md:py-3.5 rounded-md font-medium inline-flex items-center justify-center transition-all duration-200">
               Get Free Consultation
             </Link>
           </div>
           
           {/* Additional Trust Element */}
-          <div className="mt-0 text-center">
+          <div className="mt-4 text-center">
             <div className="flex flex-wrap justify-center items-center space-x-2 sm:space-x-5 md:space-x-10 opacity-80">
-              <span className="text-xs sm:text-sm">• Student Visas</span>
-              <span className="text-xs sm:text-sm">• Work Permits</span>
-              <span className="text-xs sm:text-sm">• Permanent Residency</span>
-              <span className="text-xs sm:text-sm">• Family Reunification</span>
-              <span className="text-xs sm:text-sm">• Visitor & Business Visas</span>
+              <span className="text-xs sm:text-sm md:text-base">• Student Visas</span>
+              <span className="text-xs sm:text-sm md:text-base">• Work Permits</span>
+              <span className="text-xs sm:text-sm md:text-base">• Permanent Residency</span>
+              <span className="text-xs sm:text-sm md:text-base">• Family Reunification</span>
+              <span className="text-xs sm:text-sm md:text-base">• Visitor & Business Visas</span>
             </div>
           </div>
         </div>
       </section>
 
       {/* Services Overview */}
-      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6">
+      <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 sm:mb-12">Our Services</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
