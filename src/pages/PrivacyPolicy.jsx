@@ -112,7 +112,7 @@ const PrivacyPolicy = () => {
               <li>Right to request deletion of your personal data (subject to legal obligations)</li>
               <li>Right to restrict or object to certain types of processing</li>
             </ul>
-            <p className="text-sm sm:text-base md:text-md mb-4 sm:mb-6">To exercise your rights, please email us at info.immigrationmentors@gmail.com.</p>
+            <p className="text-sm sm:text-base md:text-md mb-4 sm:mb-6">To exercise your rights, please email us at info@immigrationmentors.in.</p>
 
             <h2 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mt-6 sm:mt-8 mb-3 sm:mb-4">9. Third-Party Links</h2>
             <p className="text-sm sm:text-base md:text-md mb-4 sm:mb-6">
@@ -129,17 +129,17 @@ const PrivacyPolicy = () => {
             <div className="bg-gray-100 p-3 sm:p-4 rounded-lg text-sm sm:text-base md:text-md">
               <div className="mb-3 sm:mb-4">
                 <div className="flex items-center mb-1 sm:mb-2">
-                  <HiPhone className="text-green-600 text-base sm:text-lg mr-2" />
+                  <HiPhone className="text-gray-600 text-base sm:text-lg mr-2" />
                   <span className="font-semibold">Phone</span>
                 </div>
                 <p className="ml-6">+91-9392666609</p>
               </div>
               <div className="mb-3 sm:mb-4">
                 <div className="flex items-center mb-1 sm:mb-2">
-                  <HiMail className="text-blue-600 text-base sm:text-lg mr-2" />
+                  <HiMail className="text-gray-600 text-base sm:text-lg mr-2" />
                   <span className="font-semibold">Email</span>
                 </div>
-                <p className="ml-6">info.immigrationmentors@gmail.com</p>
+                <p className="ml-6">info@immigrationmentors.in</p>
               </div>
               <div>
                 <div className="flex items-center mb-1 sm:mb-2">

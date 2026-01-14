@@ -293,7 +293,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <p className="font-semibold text-gray-900 text-sm sm:text-base">Email</p>
-                      <p className="text-gray-600 text-sm sm:text-base break-all">info.immigrationmentors@gmail.com</p>
+                      <p className="text-gray-600 text-sm sm:text-base break-all">info@immigrationmentors.in</p>
                     </div>
                   </div>
 

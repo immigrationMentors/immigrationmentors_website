@@ -115,17 +115,17 @@ const TermsAndConditions = () => {
               <h3 className="font-semibold text-base sm:text-lg mb-3 sm:mb-4">Immigration Mentors</h3>
               <div className="mb-3 sm:mb-4">
                 <div className="flex items-center mb-1 sm:mb-2">
-                  <HiPhone className="text-green-600 text-base sm:text-lg mr-2" />
+                  <HiPhone className="text-gray-600 text-base sm:text-lg mr-2" />
                   <span className="font-semibold">Phone</span>
                 </div>
                 <p className="ml-6">+91-9392666609</p>
               </div>
               <div className="mb-3 sm:mb-4">
                 <div className="flex items-center mb-1 sm:mb-2">
-                  <HiMail className="text-blue-600 text-base sm:text-lg mr-2" />
+                  <HiMail className="text-gray-600 text-base sm:text-lg mr-2" />
                   <span className="font-semibold">Email</span>
                 </div>
-                <p className="ml-6">info.immigrationmentors@gmail.com</p>
+                <p className="ml-6">info@immigrationmentors.in</p>
               </div>
               <div>
                 <div className="flex items-center mb-1 sm:mb-2">

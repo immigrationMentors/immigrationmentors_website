@@ -32,8 +32,8 @@ const Footer = () => {
                 <HiMail className="text-blue-400 text-xl mr-3 mt-1 flex-shrink-0" />
                 <div>
                   <p className="text-white font-semibold text-sm sm:text-base md:text-md">Email</p>
-                  <a href="mailto:info.immigrationmentors@gmail.com" className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base md:text-md break-all">
-                    info.immigrationmentors@gmail.com
+                  <a href="mailto:info@immigrationmentors.in" className="text-gray-300 hover:text-blue-400 transition-colors text-sm sm:text-base md:text-md break-all">
+                    info@immigrationmentors.in
                   </a>
                 </div>
               </div>

@@ -94,6 +94,6 @@ The project is configured for GitHub Pages deployment with:
 ## Contact
 
 **Immigration Mentors**  
-Email: info.immigrationmentors@gmail.com
+Email: info@immigrationmentors.in
 
 

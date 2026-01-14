@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
-import { HiAcademicCap, HiUserGroup, HiGlobeAlt, HiStar } from 'react-icons/hi';
+import { HiStar } from 'react-icons/hi';
 import worldmapImage from '/worldmap.jpg';
 
 const Home = () => {
@@ -11,10 +11,10 @@ const Home = () => {
       <Navbar />
       
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-gray-900 to-black text-white py-10 sm:py-14 md:py-18 lg:py-24 px-6 sm:px-8 md:px-10 lg:px-12 relative overflow-hidden">
+       <section className="bg-gradient-to-br from-gray-800 to-black text-white py-20 sm:py-24 md:py-28 lg:py-32 px-6 sm:px-8 md:px-10 lg:px-12 relative overflow-hidden">
         {/* Background Image */}
         <div
-          className="absolute inset-0 opacity-10 bg-cover bg-center blur-xs"
+          className="absolute inset-0 opacity-20 bg-cover bg-center blur-xs"
           style={{ backgroundImage: `url(${worldmapImage})` }}
         ></div>
         
@@ -65,52 +65,8 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Features Section */}
-      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-10 sm:mb-16">
-            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Why Choose Immigration Mentors?</h2>
-            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              We provide expert guidance and personalized support for your immigration journey
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
-            <div className="card text-center animate-slide-up">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-blue-600 flex justify-center">
-                <HiAcademicCap />
-              </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Expert Guidance</h3>
-              <p className="text-sm sm:text-base text-gray-600">
-                Years of experience helping students and professionals achieve their dreams abroad
-              </p>
-            </div>
-            
-            <div className="card text-center animate-slide-up">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-green-600 flex justify-center">
-                <HiUserGroup />
-              </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Personalized Support</h3>
-              <p className="text-sm sm:text-base text-gray-600">
-                Tailored advice and step-by-step support for every client
-              </p>
-            </div>
-            
-            <div className="card text-center animate-slide-up sm:col-span-2 md:col-span-1 sm:max-w-md md:max-w-none mx-auto sm:mx-auto md:mx-0 w-full">
-              <div className="text-4xl sm:text-5xl mb-3 sm:mb-4 text-purple-600 flex justify-center">
-                <HiGlobeAlt />
-              </div>
-              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Global Reach</h3>
-              <p className="text-sm sm:text-base text-gray-600">
-                Comprehensive services for multiple countries worldwide
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Services Overview */}
-      <section className="bg-gray-100 py-10 sm:py-12 md:py-16 px-4 sm:px-6">
+      <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-8 sm:mb-12">Our Services</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 mb-8 sm:mb-12">
@@ -165,13 +121,69 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Features Section */}
+      <section className="bg-gray-100 py-10 sm:py-12 md:py-16 px-4 sm:px-6">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-10 sm:mb-16">
+            <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Why Choose Immigration Mentors?</h2>
+            <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
+              We provide expert guidance and personalized support for your immigration journey
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+            <div className="card text-center animate-slide-up">
+              <div className="mb-3 sm:mb-4">
+                <img 
+                  src="/expertguidance.jpg" 
+                  alt="Expert Guidance" 
+                  className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg shadow-sm"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Expert Guidance</h3>
+              <p className="text-sm sm:text-base text-gray-600">
+                Years of experience helping students and professionals achieve their dreams abroad
+              </p>
+            </div>
+            
+            <div className="card text-center animate-slide-up">
+              <div className="mb-3 sm:mb-4">
+                <img 
+                  src="/personalizedsupport.jpg" 
+                  alt="Personalized Support" 
+                  className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg shadow-sm"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Personalized Support</h3>
+              <p className="text-sm sm:text-base text-gray-600">
+                Tailored advice and step-by-step support for every client
+              </p>
+            </div>
+            
+            <div className="card text-center animate-slide-up sm:col-span-2 md:col-span-1 sm:max-w-md md:max-w-none mx-auto sm:mx-auto md:mx-0 w-full">
+              <div className="mb-3 sm:mb-4">
+                <img 
+                  src="/globalreach.jpg" 
+                  alt="Global Reach" 
+                  className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg shadow-sm"
+                />
+              </div>
+              <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Global Reach</h3>
+              <p className="text-sm sm:text-base text-gray-600">
+                Comprehensive services for multiple countries worldwide
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="py-10 sm:py-12 md:py-16 px-4 sm:px-6 bg-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-10 sm:mb-16">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">What Our Clients Say</h2>
             <p className="text-base sm:text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
-              Real success stories from our satisfied clients
+              Real success stories from our clients
             </p>
           </div>
           
@@ -180,11 +192,10 @@ const Home = () => {
             <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-3 sm:mb-4">
                 <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg mr-3 sm:mr-4">
-                  S
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Sai Teja</h4>
-                  <p className="text-gray-600 text-xs sm:text-sm">🇨🇦 Spousal PR – Approved in just 8 weeks</p>
+                  <p className="text-gray-600 text-xs sm:text-sm">🇨🇦 Spousal PR</p>
                 </div>
               </div>
               <div className="flex mb-2 sm:mb-3">
@@ -214,7 +225,7 @@ const Home = () => {
                 ))}
               </div>
               <p className="text-gray-700 italic text-xs sm:text-sm">
-                "From my Canada Study Permit to Work Permit, and even my US Visit Visa — Immigration Mentors guided me every step of the way. Their detailed approach and transparency made the entire journey stress-free. Highly recommended!"
+                "From my Canada Study Permit to Work Permit and even my US Visit Visa, Immigration Mentors guided me every step of the way. Their detailed approach and transparency made the entire journey stress-free. Highly recommended!"
               </p>
             </div>
 
