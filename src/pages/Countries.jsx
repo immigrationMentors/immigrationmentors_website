@@ -7,6 +7,7 @@ const countries = [
   {
     name: "Canada",
     flag: "https://flagsapi.com/CA/flat/64.png",
+    image: "/canada.jpg",
     slug: "canada",
     description: "Study Permit, Work Permit, PR, Visitor Visa & More",
     color: "from-gray-800 to-gray-900"
@@ -14,6 +15,7 @@ const countries = [
   {
     name: "USA",
     flag: "https://flagsapi.com/US/flat/64.png",
+    image: "/united_states.png",
     slug: "usa",
     description: "Student Visa, Visitor Visa, Slot Booking",
     color: "from-gray-700 to-gray-800"
@@ -21,6 +23,7 @@ const countries = [
   {
     name: "Australia",
     flag: "https://flagsapi.com/AU/flat/64.png",
+    image: "/australia.png",
     slug: "australia",
     description: "Work & Holiday, Tourist, Student Visa",
     color: "from-gray-600 to-gray-700"
@@ -28,6 +31,7 @@ const countries = [
   {
     name: "United Kingdom",
     flag: "https://flagsapi.com/GB/flat/64.png",
+    image: "/united_kingdom.png",
     slug: "uk",
     description: "Visitor Visa, Study Visa",
     color: "from-slate-700 to-slate-800"
@@ -35,6 +39,7 @@ const countries = [
   {
     name: "Schengen Countries",
     flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/200px-Flag_of_Europe.svg.png",
+    image: "/schengen_countries.png",
     slug: "schengen",
     description: "Tourist Visa for 29 European Countries",
     color: "from-zinc-700 to-zinc-800"
@@ -42,6 +47,7 @@ const countries = [
   {
     name: "New Zealand",
     flag: "https://flagsapi.com/NZ/flat/64.png",
+    image: "/new_zealand.jpg",
     slug: "new-zealand",
     description: "Visitor Visa",
     color: "from-stone-700 to-stone-800"
@@ -49,6 +55,7 @@ const countries = [
   {
     name: "Germany",
     flag: "https://flagsapi.com/DE/flat/64.png",
+    image: "/germany.jpg",
     slug: "germany",
     description: "Study Visa",
     color: "from-neutral-700 to-neutral-800"
@@ -56,6 +63,7 @@ const countries = [
   {
     name: "Ireland",
     flag: "https://flagsapi.com/IE/flat/64.png",
+    image: "/ireland.png",
     slug: "ireland",
     description: "Study Visa",
     color: "from-gray-600 to-slate-700"
@@ -63,6 +71,7 @@ const countries = [
   {
     name: "Georgia",
     flag: "https://flagsapi.com/GE/flat/64.png",
+    image: "/georgia.jpg",
     slug: "georgia",
     description: "Visit Visa (eVisa)",
     color: "from-slate-600 to-gray-700"
@@ -93,19 +102,31 @@ const Countries = () => {
                 to={`/country/${country.slug}`}
                 className="group block"
               >
-                <div className="card group-hover:scale-105 transition-transform duration-300 h-full flex flex-col overflow-hidden p-4 sm:p-6">
-                  <div className="bg-gray-100 p-4 sm:p-6 md:p-8 rounded-lg mb-3 sm:mb-4 flex justify-center items-center">
+                <div className="card group-hover:scale-105 transition-transform duration-300 h-full flex flex-col overflow-hidden">
+                  {/* Country Image Container */}
+                  <div className="relative overflow-hidden h-40 sm:h-48 md:h-56 bg-gray-200">
                     <img
-                      src={country.flag}
-                      alt={`${country.name} Flag`}
-                      className="w-16 sm:w-20 h-10 sm:h-12 object-cover rounded-lg shadow-md"
+                      src={country.image}
+                      alt={`${country.name}`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
                     />
                   </div>
-                  <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900 mb-2 sm:mb-3">{country.name}</h3>
-                  <p className="text-sm sm:text-base md:text-md text-gray-600 mb-4 flex-grow">{country.description}</p>
-                  <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white font-semibold py-2 sm:py-3 px-3 sm:px-4 -mx-4 sm:-mx-6 -mb-4 sm:-mb-6 mt-auto flex items-center justify-between">
-                    <span className="text-xs sm:text-sm">View Services</span>
-                    <span className="group-hover:translate-x-1 transition-transform text-xs sm:text-sm">→</span>
+                  
+                  {/* Content */}
+                  <div className="p-4 sm:p-6 flex flex-col flex-grow">
+                    <div className="flex items-center justify-between gap-2 mb-2 sm:mb-3">
+                      <h3 className="text-base sm:text-lg md:text-xl font-semibold text-gray-900">{country.name}</h3>
+                      <img
+                        src={country.flag}
+                        alt={`${country.name} Flag`}
+                        className="w-6 sm:w-8 h-4 sm:h-5 object-cover rounded flex-shrink-0"
+                      />
+                    </div>
+                    <p className="text-sm sm:text-base md:text-md text-gray-600 mb-4 flex-grow">{country.description}</p>
+                    <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white font-semibold py-2 sm:py-3 px-3 sm:px-4 -mx-4 sm:-mx-6 -mb-4 sm:-mb-6 mt-auto flex items-center justify-between">
+                      <span className="text-xs sm:text-sm">View Services</span>
+                      <span className="group-hover:translate-x-1 transition-transform text-xs sm:text-sm">→</span>
+                    </div>
                   </div>
                 </div>
               </Link>

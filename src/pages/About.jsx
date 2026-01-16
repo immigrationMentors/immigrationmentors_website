@@ -53,7 +53,7 @@ const About = () => {
                     <HiHeart className="text-white text-xl sm:text-2xl" />
                   </div>
                   <h4 className="font-semibold text-gray-900 mb-1 sm:mb-2 text-sm sm:text-base">Trust</h4>
-                  <p className="text-sm sm:text-base md:text-md text-gray-600">Building lasting relationships through honesty and reliability</p>
+                  <p className="text-gray-600 text-xs sm:text-sm">Building lasting relationships through honesty and reliability</p>
                 </div>
                 <div className="text-center">
                   <div className="bg-green-600 p-3 rounded-full w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 flex items-center justify-center mx-auto mb-3 sm:mb-4">

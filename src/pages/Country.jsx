@@ -89,10 +89,23 @@ const countryNames = {
   georgia: "Georgia"
 };
 
+const countryImages = {
+  canada: "/canada.jpg",
+  usa: "/united_states.png",
+  australia: "/australia.png",
+  uk: "/united_kingdom.png",
+  schengen: "/schengen_countries.png",
+  "new-zealand": "/new_zealand.jpg",
+  germany: "/germany.jpg",
+  ireland: "/ireland.png",
+  georgia: "/georgia.jpg"
+};
+
 const Country = () => {
   const { slug } = useParams();
   const services = visaServices[slug] || [];
   const countryName = countryNames[slug] || slug;
+  const countryImage = countryImages[slug];
 
   if (!services.length) {
     return (
@@ -116,9 +129,10 @@ const Country = () => {
     <div className="min-h-screen bg-gray-50">
       <Navbar />
       
-      <section className="py-6 sm:py-8 md:py-10 px-4 sm:px-6">
+      <section className="px-4 sm:px-6">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-8 sm:mb-12 md:mb-16">
+          {/* Header Section */}
+          <div className="py-6 sm:py-8 md:py-10 text-center">
             <Link 
               to="/countries" 
               className="inline-flex items-center text-blue-600 hover:text-blue-800 mb-2 sm:mb-4"
@@ -132,7 +146,22 @@ const Country = () => {
               Professional visa and immigration services for {countryName}
             </p>
           </div>
-          
+
+          {/* Hero Image */}
+          {countryImage && (
+            <div className="mb-8 sm:mb-12 md:mb-16 overflow-hidden rounded-xl shadow-lg">
+              <img
+                src={countryImage}
+                alt={`${countryName} landscape`}
+                className="w-full h-64 sm:h-80 md:h-96 lg:h-[500px] object-cover"
+              />
+            </div>
+          )}
+        </div>
+      </section>
+      
+      <section className="py-6 sm:py-8 md:py-10 px-4 sm:px-6">
+        <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 md:gap-8">
             {services.map((service, index) => (
               <div key={index} className="card group p-4 sm:p-6">

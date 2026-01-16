@@ -20,12 +20,12 @@ const Home = () => {
         
         <div className="max-w-6xl mx-auto text-center relative z-10">
           {/* Trust Badge */}
-          <div className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-1 sm:px-2 md:px-4 lg:px-6 py-1.5 sm:py-2.5 mb-8 sm:mb-12 text-xs sm:text-sm md:text-base max-w-[95%] sm:max-w-[85%] whitespace-nowrap overflow-hidden">
-            <span className="text-yellow-400 mr-1 sm:mr-1.5 md:mr-2.5 flex-shrink-0">
+          <div className="inline-flex items-center bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-1 sm:px-2 md:px-4 lg:px-6 py-1.5 sm:py-2.5 mb-8 sm:mb-12 text-xs sm:text-sm md:text-base max-w-[95%] sm:max-w-[90%] whitespace-nowrap overflow-hidden">
+            <span className="text-yellow-400 mr-1 sm:mr-1.5 md:mr-2 flex-shrink-0">
               <HiStar className="w-3 h-3 sm:w-4 sm:h-4" />
             </span>
             <span className="truncate">Serving Hyderabadis & Beyond | Registered Professionals</span>
-            <span className="text-yellow-400 ml-1 sm:ml-1.5 md:ml-2.5 flex-shrink-0">
+            <span className="text-yellow-400 ml-1 sm:ml-1.5 md:ml-2 flex-shrink-0">
               <HiStar className="w-3 h-3 sm:w-4 sm:h-4" />
             </span>
           </div>
@@ -137,7 +137,7 @@ const Home = () => {
                 <img 
                   src="/expertguidance.jpg" 
                   alt="Expert Guidance" 
-                  className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg shadow-sm"
+                  className="w-full h-40 sm:h-40 md:h-48 object-cover rounded-lg shadow-sm"
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Expert Guidance</h3>
@@ -151,7 +151,7 @@ const Home = () => {
                 <img 
                   src="/personalizedsupport.jpg" 
                   alt="Personalized Support" 
-                  className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg shadow-sm"
+                  className="w-full h-40 sm:h-40 md:h-48 object-cover rounded-lg shadow-sm"
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Personalized Support</h3>
@@ -165,7 +165,7 @@ const Home = () => {
                 <img 
                   src="/globalreach.jpg" 
                   alt="Global Reach" 
-                  className="w-full h-32 sm:h-40 md:h-48 object-cover rounded-lg shadow-sm"
+                  className="w-full h-40 sm:h-40 md:h-48 object-cover rounded-lg shadow-sm"
                 />
               </div>
               <h3 className="text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Global Reach</h3>
@@ -191,7 +191,8 @@ const Home = () => {
             {/* Testimonial 1 */}
             <div className="bg-gray-50 p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
               <div className="flex items-center mb-3 sm:mb-4">
-                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg mr-3 sm:mr-4">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-green-500 to-teal-600 rounded-full flex items-center justify-center text-white font-bold text-base sm:text-lg mr-3 sm:mr-4">
+                  S
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 text-sm sm:text-base">Sai Teja</h4>
