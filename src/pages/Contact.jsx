@@ -309,34 +309,19 @@ const Contact = () => {
                 </div>
               </div>
 
-              <div className="card p-4 sm:p-6 md:p-8">
-                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Why Choose Us?</h3>
-                <ul className="space-y-2 sm:space-y-3">
-                  <li className="flex items-start">
-                    <div className="text-blue-600 mr-2 mt-1">
-                      <FiCheck />
-                    </div>
-                    <span className="text-gray-600 text-sm sm:text-base">Expert consultation with experienced professionals</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-blue-600 mr-2 mt-1">
-                      <FiCheck />
-                    </div>
-                    <span className="text-gray-600 text-sm sm:text-base">Personalized guidance for each client</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-blue-600 mr-2 mt-1">
-                      <FiCheck />
-                    </div>
-                    <span className="text-gray-600 text-sm sm:text-base">High success rate in visa approvals</span>
-                  </li>
-                  <li className="flex items-start">
-                    <div className="text-blue-600 mr-2 mt-1">
-                      <FiCheck />
-                    </div>
-                    <span className="text-gray-600 text-sm sm:text-base">Support throughout the entire process</span>
-                  </li>
-                </ul>
+              <div className="card p-2 sm:p-4 md:p-6">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3 sm:mb-4">Our Location</h3>
+                <div className="rounded-lg overflow-hidden h-50 sm:h-64 md:h-76">
+                  <iframe
+                    width="100%"  
+                    height="100%"                     
+                    style={{ border: 0 }}
+                    loading="lazy"
+                    allowFullScreen=""
+                    referrerPolicy="no-referrer-when-downgrade"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3808.0935897230597!2d78.45226860000001!3d17.359229000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb9752d41a32ef%3A0xbfb131f966f1dd11!2sImmigration%20Mentors!5e0!3m2!1sen!2sca!4v1768728645501!5m2!1sen!2sca"
+                  ></iframe>
+                </div>
               </div>
             </div>
           </div>
